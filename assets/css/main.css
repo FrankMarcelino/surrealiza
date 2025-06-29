@@ -25,9 +25,38 @@ Version: 1.0.0
   --bspan: #ababab;
 }
 
+/* botão do whatsapp */
+
+.whatsapp-float {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 70px;
+  right: 20px;
+  background-color: #25d366;
+  color: white;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 30px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease;
+}
+
+.whatsapp-float:hover {
+  transform: scale(1.1);
+  background-color: #1ebea5;
+  color: white;
+}
+
 /* -----------------------
     Template Default Fonts
  ------------------------- */
+
+
 body {
   font-family: "Manrope", sans-serif;
   font-size: 16px;
