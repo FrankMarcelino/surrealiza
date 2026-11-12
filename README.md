@@ -15,7 +15,7 @@ Swiper, tilt, contadores, faixas de texto correndo) e a marcação são do templ
 - `assets/js/config.js`: **número do WhatsApp e textos pré-preenchidos**. É o único lugar para trocar.
 - `assets/js/site.js`: monta os links `wa.me` a partir do `config.js`, mostra o número e carrega o Google Analytics depois da página.
 - `assets/js/main.js`: comportamento do template (menu, painel lateral, tilt, contadores, carrossel, AOS, acordeões), sem o preloader.
-- `assets/css/ajustes.css`: o que foi acrescentado por cima do template (botões de WhatsApp, preço dos pacotes, cases).
+- `assets/css/ajustes.css`: o que foi acrescentado por cima do template (botões de WhatsApp, linha de valor dos pacotes, cases).
 
 ## O que foi enxugado do template (sem mudar o visual)
 

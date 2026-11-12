@@ -12,8 +12,8 @@ window.SURREALIZA = {
   WHATSAPP_MESSAGES: {
     default: "Olá, Frank! Quero um diagnóstico grátis. O link do meu app/site é: ",
     diagnostico: "Olá, Frank! Quero um diagnóstico grátis. O link do meu app/site é: ",
-    resgate: "Olá, Frank! Tenho interesse no Resgate (colocar meu app no ar direito). O link é: ",
-    manutencao: "Olá, Frank! Tenho interesse na manutenção mensal do meu app. O link é: ",
-    modernizacao: "Olá, Frank! Quero modernizar o site da minha empresa. O link é: ",
+    resgate: "Olá, Frank! Quero marcar uma call sobre o Resgate (colocar meu app no ar direito). O link é: ",
+    manutencao: "Olá, Frank! Quero marcar uma call sobre a manutenção mensal do meu app. O link é: ",
+    modernizacao: "Olá, Frank! Quero marcar uma call sobre modernizar o site da minha empresa. O link é: ",
   },
 };
