@@ -3,8 +3,10 @@
 Site da Surrealiza (Frank Silva): resgate e manutenção de apps feitos com IA
 (Lovable, Bolt, v0, Cursor) e modernização de sites.
 
-Publicado pelo GitHub Pages a partir da branch `main`:
-https://frankmarcelino.github.io/surrealiza/
+No ar em https://www.surrealiza.online/ (o domínio sem `www` redireciona para ele).
+A Vercel publica sozinha cada merge na `main` (Production) e gera uma prévia por PR.
+O GitHub Pages ainda publica uma cópia em https://frankmarcelino.github.io/surrealiza/;
+o `canonical` aponta para o domínio, então o Google trata o domínio como o endereço oficial.
 
 Feito sobre o template **Xstar (Gramentheme, ThemeForest)**: o visual, as animações (AOS, carrossel
 Swiper, tilt, contadores, faixas de texto correndo) e a marcação são do template.

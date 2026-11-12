@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://frankmarcelino.github.io/surrealiza/sitemap.xml
+Sitemap: https://www.surrealiza.online/sitemap.xml
