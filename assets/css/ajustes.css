@@ -1,0 +1,194 @@
+/* Ajustes da Surrealiza por cima do template (main.css).
+   Só o que o template não tinha: CTAs de WhatsApp, preço dos pacotes,
+   ícones das dores, espaço de print dos cases e reset de <button>. */
+
+/* Botões que no template eram <div>: tirar a cara de botão do navegador */
+button.remove-click,
+button.accordion-btn,
+button#progress,
+.subside-barmenu button.remove-click {
+  background: none;
+  border: 0;
+  color: inherit;
+  font: inherit;
+  padding: 0;
+}
+button.remove-clickbg-adding {
+  background: var(--bg1);
+  color: var(--white);
+}
+#progress {
+  display: none;
+}
+
+/* O template põe text-transform: capitalize em todos os títulos;
+   em português isso vira "Um Erro Que A IA Não Resolve". */
+h1, h2, h3, h4, h5, h6 {
+  text-transform: none;
+}
+
+:focus-visible {
+  outline: 2px solid var(--theme);
+  outline-offset: 3px;
+}
+
+/* CTA principal do hero */
+.cta-whats {
+  background: var(--theme);
+  color: var(--bg2);
+  font-weight: 700;
+  font-size: 18px;
+  padding: 16px 28px;
+  min-height: 56px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.cta-whats i {
+  font-size: 22px;
+}
+.cta-whats:hover {
+  color: var(--bg2);
+  transform: translateY(-2px);
+  box-shadow: 0 10px 30px -10px rgba(57, 211, 83, 0.6);
+}
+.hero-section-version3 .ringle-content {
+  max-width: 460px;
+}
+
+/* Dores: ícone no lugar das imagens 3D do template */
+.dor-icon {
+  font-size: 44px;
+  color: var(--theme);
+  line-height: 1;
+}
+
+/* Pacotes */
+.servicos-intro {
+  max-width: 560px;
+}
+.other-pricing-item .preco {
+  font-size: 22px;
+  font-weight: 700;
+}
+.pacote-btn {
+  flex-shrink: 0;
+  min-height: 52px;
+  padding: 12px 26px;
+  border: 1px solid var(--theme);
+  color: var(--theme);
+  font-weight: 600;
+  white-space: nowrap;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+.pacote-btn:hover,
+.pacote-btn--cheio {
+  background: var(--theme);
+  color: var(--bg2);
+}
+.pacote-btn--cheio:hover {
+  background: #5fe076;
+  color: var(--bg2);
+}
+.pacote-destaque {
+  border-color: var(--theme) !important;
+}
+@media (max-width: 991px) {
+  .other-pricing-item .pricinge-head {
+    padding-top: 28px;
+    padding-right: 20px;
+  }
+  .pacote-btn {
+    width: 100%;
+  }
+}
+
+/* "Por que confiar" */
+.confianca-list {
+  list-style: none;
+  padding: 0;
+}
+
+/* Números com placeholder (sem animação até virar número) */
+.numero-placeholder {
+  font-size: 22px !important;
+}
+
+/* Cases: o acordeão de serviços do template não abre .content-area;
+   aqui ele abre (esconde fechado, mostra aberto). */
+#trabalhos .accordion-single .content-area {
+  display: none;
+}
+#trabalhos .accordion-single.active .content-area {
+  display: block !important;
+}
+#trabalhos .accordion-single .accordion-btn {
+  cursor: pointer;
+}
+
+/* Cases: corpo do acordeão e espaço para prints */
+.case-texto {
+  flex: 1;
+}
+.case-shots {
+  flex: 0 0 auto;
+}
+.case-shot {
+  width: 150px;
+  aspect-ratio: 9 / 14;
+  border: 1px dashed var(--border1);
+  border-radius: 10px;
+  display: grid;
+  place-items: center;
+  text-align: center;
+  padding: 10px;
+  font-size: 13px;
+  color: var(--pra-clr);
+}
+#trabalhos .mtitle {
+  font-size: clamp(22px, 3vw, 32px);
+}
+
+/* Depoimentos */
+.depo-foto {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.testimonial-zero-oneitem blockquote {
+  margin: 0;
+}
+
+/* Sobre */
+.trans-social a {
+  color: #8a8c94;
+  font-size: 22px;
+}
+.trans-social a:hover {
+  color: var(--theme);
+}
+
+/* CTA final */
+.cta-final__titulo {
+  font-size: clamp(24px, 3vw, 34px);
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 12px;
+}
+.getin-touch {
+  border: 1px solid var(--theme);
+  border-radius: 10px;
+  font-size: 18px;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+.getin-touch:hover {
+  background: var(--theme);
+  color: var(--bg2) !important;
+}
+.getin-touch:hover i {
+  color: var(--bg2) !important;
+}
+
+/* width/height no <img> evitam pulo de layout; altura segue a proporção */
+img[height] {
+  height: auto;
+}
