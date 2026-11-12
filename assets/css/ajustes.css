@@ -107,11 +107,6 @@ h1, h2, h3, h4, h5, h6 {
   padding: 0;
 }
 
-/* Números com placeholder (sem animação até virar número) */
-.numero-placeholder {
-  font-size: 22px !important;
-}
-
 /* Cases: o acordeão de serviços do template não abre .content-area;
    aqui ele abre (esconde fechado, mostra aberto). */
 #trabalhos .accordion-single .content-area {
@@ -124,24 +119,9 @@ h1, h2, h3, h4, h5, h6 {
   cursor: pointer;
 }
 
-/* Cases: corpo do acordeão e espaço para prints */
+/* Cases */
 .case-texto {
   flex: 1;
-}
-.case-shots {
-  flex: 0 0 auto;
-}
-.case-shot {
-  width: 150px;
-  aspect-ratio: 9 / 14;
-  border: 1px dashed var(--border1);
-  border-radius: 10px;
-  display: grid;
-  place-items: center;
-  text-align: center;
-  padding: 10px;
-  font-size: 13px;
-  color: var(--pra-clr);
 }
 #trabalhos .mtitle {
   font-size: clamp(22px, 3vw, 32px);
@@ -191,4 +171,39 @@ h1, h2, h3, h4, h5, h6 {
 /* width/height no <img> evitam pulo de layout; altura segue a proporção */
 img[height] {
   height: auto;
+}
+
+/* Cases: print do "depois" (computador + celular) */
+.case-shots {
+  flex: 0 0 auto;
+}
+.case-shot {
+  border-radius: 10px;
+  border: 1px solid var(--border1);
+  height: auto;
+}
+#trabalhos .case-texto {
+  flex: 1 1 0;
+  min-width: 0;
+}
+.case-shot--desk {
+  width: 380px;
+}
+.case-shot--mob {
+  width: 100px;
+}
+@media (max-width: 991px) {
+  .case-shots {
+    width: 100%;
+  }
+  .case-shot--desk {
+    width: calc(100% - 88px);
+    min-width: 0;
+  }
+  .case-shot--mob {
+    width: 76px;
+  }
+}
+.justify-self-start {
+  justify-self: start;
 }

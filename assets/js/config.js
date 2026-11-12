@@ -14,6 +14,6 @@ window.SURREALIZA = {
     diagnostico: "Olá, Frank! Quero um diagnóstico grátis. O link do meu app/site é: ",
     resgate: "Olá, Frank! Quero marcar uma call sobre o Resgate (colocar meu app no ar direito). O link é: ",
     manutencao: "Olá, Frank! Quero marcar uma call sobre a manutenção mensal do meu app. O link é: ",
-    modernizacao: "Olá, Frank! Quero marcar uma call sobre modernizar o site da minha empresa. O link é: ",
+    modernizacao: "Olá, Frank! Quero marcar uma call sobre um site ou landing page. Se já tiver site, o link é: ",
   },
 };
