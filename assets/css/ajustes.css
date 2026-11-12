@@ -207,3 +207,14 @@ img[height] {
 .justify-self-start {
   justify-self: start;
 }
+
+/* "O que eu construo": grade alinhada no lugar da lista de stack */
+.o-que-faco {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+@media (max-width: 575px) {
+  .o-que-faco {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
