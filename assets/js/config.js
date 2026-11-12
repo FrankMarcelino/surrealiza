@@ -7,7 +7,7 @@
  * em vez de abrir um WhatsApp errado.
  */
 window.SURREALIZA = {
-  WHATSAPP_NUMBER: "[[PREENCHER: número de WhatsApp correto]]",
+  WHATSAPP_NUMBER: "5588999418111",
 
   WHATSAPP_MESSAGES: {
     default: "Olá, Frank! Quero um diagnóstico grátis. O link do meu app/site é: ",
